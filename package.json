@@ -2,7 +2,7 @@
   "name": "portfolio-project",
   "version": "1.0.0",
   "description": "Redeeming Disney Podcast Website",
-  "main": "RDhome.html",
+  "main": "index.html",
   "scripts": {
     "lite": "lite-server",
     "start": "npm run lite",
