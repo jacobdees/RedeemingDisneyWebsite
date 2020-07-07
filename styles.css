@@ -1,3 +1,33 @@
 body {
-	background-image: src="images/background.jpeg";
+	background-image: url("Images/background.jpeg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	font-size: 16px;
+}
+
+header {
+	color: whitesmoke;
+	/* text-align: center; */
+	vertical-align: text-top;
+}
+
+header h1{
+	font-size: 500%;
+	text-transform: uppercase;
+}
+
+
+.nav-link:hover {
+	text-decoration: overline;
+	color: transparent;
+	text-shadow: 0 0 5px rgba(255,255,255,1);
+}
+
+.center {
+  /* margin: auto; */
+  /* width: 60%; */
+  /* border: 3px solid #73AD21; */
+  padding: 250px;
 }
