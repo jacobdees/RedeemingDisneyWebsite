@@ -11,6 +11,8 @@
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
         <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
         <link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
     
         <!-- endbuild -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
@@ -18,51 +20,67 @@
 	    <title>Redeeming Disney</title>
 	</head>
     <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-		<div class="container">
-			<button
-				class="navbar-toggler"
-				type="button"
-				data-toggle="collapse"
-				data-target="#navbarNav"
-				aria-controls="navbarNav"
-				aria-expanded="false"
-				aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div
-				class="collapse navbar-collapse justify-content-center"
-				id="rdNavbar">
-                
-				<ul class="navbar-nav nav-fill col-10">
-					<li class="nav-item">
-						<a class="nav-link" href="index.html">HOME</a>
-					</li>
-					<li class="nav-item active">
-						<a class="nav-link" href="#">ABOUT US</a>
-					</li>
-					<a class="navbar-brand" href="index.html">REDEEMING DISNEY</a>
-					<li class="nav-item">
-						<a class="nav-link" href="content.html">CONTENT</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="shop.html">SHOP</a>
-					</li>
-				</ul>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div
+					class="collapse navbar-collapse justify-content-center"
+					id="rdNavbar">
+                    
+					<ul class="navbar-nav nav-fill col-10">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="#">ABOUT US</a>
+						</li>
+						<a class="navbar-brand" href="index.html">REDEEMING DISNEY</a>
+						<li class="nav-item">
+							<a class="nav-link" href="content.html">CONTENT</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="shop.html">SHOP</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+
+	<div class="container full-height">
+		<header>
+			<div class="row">
+				<div class="col-1"></div>
+				<div class="col-10">
+					<h1 class="animate__animated animate__fadeInUp">ABOUT US</h1>
+				</div>
 			</div>
-		</div>
-	</nav>
+		</header>
+			<div class="row justify-content-center down-arrow">
+				<div class="col-3">
+					<a href="#josh" id="downArrowScroll" style="color: whitesmoke;">
+						<i id="arrow" class="fa fa-angle-down fa-4x animate__animated animate__fadeInDown" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
+	</div>
 
 
-<div class="container">
+<div class="container full-height about-cards" id="josh">
 	<div class="row">
 		<div class="col-md-4 d-flex justify-content-center">
-			<div class="card text-white bg-secondary mb-3" style="width: 18rem; padding: 10px; margin: 10px">
+			<div class="card text-white bg-secondary mb-3" style="width: 18rem; padding: 10px;">
 			  <img src="Images/josh-stewart-2018.png" class="card-img-top" alt="Josh Stewart">
 			  <div class="card-body text-md-left text-center">
 			    <h4 class="card-title">Josh Stewart</h4>
 			    <p class="card-text d-none d-sm-block">Director of Students at Providence Church in Frisco, TX </p>
-			    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
 			  </div>
 			</div>
 		</div>
@@ -72,7 +90,7 @@
 	</div>
 </div>
 
-<div class="container">
+<div class="container full-height about-cards">
 	<div class="row">
 		<div class="col-sm-4 d-flex justify-content-center">
 			<div class="card text-white bg-secondary mb-3" style="width: 18rem; padding: 10px; margin: 10px">
@@ -80,7 +98,6 @@
 			  <div class="card-body">
 			    <h4 class="card-title">Jacob Dees</h4>
 			    <p class="card-text">Instructional Technology Coach at Apollo Junior High in Richardson ISD</p>
-			    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
 			  </div>
 			</div>
 		</div>
