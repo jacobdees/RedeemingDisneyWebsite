@@ -64,13 +64,96 @@
 		</header>
 		<div class="row justify-content-center down-arrow">
 			<div class="col-3">
-				<a href="#" id="downArrowScroll" style="color: whitesmoke;">
+				<a href="#content" style="color: whitesmoke;">
 					<i id="arrow" class="fa fa-angle-down fa-4x animate__animated animate__fadeInDown" aria-hidden="true"></i>
 				</a>
 			</div>
 		</div>
 	</div>
 
+	<!-- <ul class="nav nav-tabs nav-fill navbar-dark full-height mx-auto d-flex">
+	  <li class="nav-item">
+	    <a class="nav-link" href="#">Episodes</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="#">Videos</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="#">Events</a>
+	  </li>
+	</ul> -->
+
+	<div class="container full-height" id="content" style="padding-top: 100px;">
+		<ul class="nav nav-fill" id="myTab" role="tablist">
+		  <li class="nav-item" role="presentation">
+		    <a class="tab-selector nav-link tab-active" id="episodes-tab" data-toggle="tab" href="#episodes" role="tab" aria-controls="episodes" aria-selected="true">Episodes</a>
+		  </li>
+		  <li class="nav-item" role="presentation">
+		    <a class="tab-selector nav-link" id="videos-tab" data-toggle="tab" href="#videos" role="tab" aria-controls="videos" aria-selected="false">Videos</a>
+		  </li>
+		  <li class="nav-item" role="presentation">
+		    <a class="tab-selector nav-link" id="events-tab" data-toggle="tab" href="#events" role="tab" aria-controls="events" aria-selected="false">Events</a>
+		  </li>
+		</ul>
+		<div class="tab-content" id="myTabContent">
+		  <div class="tab-pane fade show active p-4" id="episodes" role="tabpanel" aria-labelledby="episodes-tab">
+			  <table class="table table-hover table-light table accordion">
+			  <thead class="table-head">
+			    <tr>
+			      <th scope="col">Title</th>
+			      <th scope="col">Date Recorded</th>
+			      <th scope="col">Disney Category</th>
+			      <th scope="col">Topics Covered</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr data-toggle="collapse" data-target="#order1" class="clickable">
+			      <th scope="row">Star Wars: Rogue One</th>
+			      <td>June 12, 2020</td>
+			      <td>Star Wars</td>
+			      <td>Decisions, Sacrifice</td>
+			    </tr>
+					<tr class="collapse span-4" id="order1">
+						<td>
+							testing
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+			    <tr data-toggle="collapse" data-target=".order2">
+			      <th scope="row">101 Dalmatians</th>
+			      <td>June 19, 2020</td>
+			      <td>Disney Animated Films</td>
+			      <td>Family</td>
+			    </tr>
+			    <tr data-toggle="collapse" data-target=".order3">
+			      <th scope="row">Hamilton</th>
+			      <td>July 10, 2020</td>
+			      <td>Hamilton Productions</td>
+			      <td>Legacy, Priorities, Forgiveness</td>
+			    </tr>
+			  </tbody>
+			</table>
+		  	</div>
+	  	<div class="tab-pane fade p-4" id="videos" role="tabpanel" aria-labelledby="videos-tab">
+				<div class="row flex-md-row">
+				  <div class="embed-responsive embed-responsive-16by9 col-md-6">
+					  <iframe class="align-content-center embed-responsive-item" src="Videos\Starting a Podcast.mp4"></iframe>
+					</div>
+					<div class="card col-xs-10 col-md-4 mx-auto my-auto align-content-center tab-active fixed-bottom video-card">
+						<div class="card-body">
+							<h4 class="text-center">Title of Video</h4>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sunt aut fuga itaque rem veniam amet quidem dolore voluptas nemo placeat, inventore pariatur omnis veritatis, possimus est molestiae praesentium quisquam?</p>
+						</div>
+				</div>
+				</div>
+		  </div>
+		  <div class="tab-pane fade p-4 justify-content-center d-flex" id="events" role="tabpanel" aria-labelledby="events-tab">
+				<img src="Images/EventGIF.gif" alt="">
+			</div>
+		</div>
+	</div>
 
     </body>
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
