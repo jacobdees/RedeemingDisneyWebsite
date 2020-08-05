@@ -20,29 +20,34 @@
 	    <title>Redeeming Disney</title>
 	</head>
     <body>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+			<span class="">
 			<button
 				class="navbar-toggler"
 				type="button"
 				data-toggle="collapse"
-				data-target="#navbarNav"
+				data-target="#rdNavbar"
 				aria-controls="navbarNav"
 				aria-expanded="false"
 				aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
+			</span>
+				<a class="navbar-brand justify-content-center d-none d-sm-block d-lg-none" href="index.html">REDEEMING DISNEY</a>
 			<div
-				class="collapse navbar-collapse justify-content-center"
+				class="collapse navbar-collapse"
 				id="rdNavbar">
                 
-				<ul class="navbar-nav nav-fill col-10">
+				<ul class="navbar-nav nav-fill col-10 mx-auto d-flex justify-content-end justify-content-lg-center align-content-center">
 					<li class="nav-item">
 						<a class="nav-link" href="index.html">HOME</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="aboutus.html">ABOUT US</a>
 					</li>
-					<a class="navbar-brand" href="index.html">REDEEMING DISNEY</a>
+					<span class="nav-item">
+						<a class="navbar-brand d-none d-lg-block" href="index.html">REDEEMING DISNEY</a>
+					</span>
 					<li class="nav-item">
 						<a class="nav-link" href="content.html">CONTENT</a>
 					</li>
@@ -64,13 +69,151 @@
 		</header>
 			<div class="row justify-content-center down-arrow">
 				<div class="col-3">
-					<a href="#" id="downArrowScroll" style="color: whitesmoke;">
+					<a href="#shopCards" id="downArrowScroll" style="color: whitesmoke;">
 						<i id="arrow" class="fa fa-angle-down fa-4x animate__animated animate__fadeInDown" aria-hidden="true"></i>
 					</a>
 				</div>
 			</div>
 	</div>
 
+<div class="container full-height" id="shopCards" style="padding-top: 100px;">
+	<div class="row row-cols-1 row-cols-sm-2 ">
+	  <div class="col mb-4 px-5">
+	    <div class="card tab-active">
+			<div id="rdShopTShirtCarousel" class="carousel slide p-2" data-ride="carousel">
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			      <img src="Images/RDtshirt.jpg" class="d-block w-100" alt="...">
+			    </div>
+			    <div class="carousel-item">
+			      <img src="Images/rdgreyshirt.jpg" class="d-block w-100" alt="...">
+			    </div>
+			  </div>
+			  <a class="carousel-control-prev" href="#rdShopTShirtCarousel" role="button" data-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next" href="#rdShopTShirtCarousel" role="button" data-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div>
+	      <div class="card-body">
+	        <h5 class="card-title table-head text-center">T-Shirts</h5>
+			<div class="text-center">
+				<a href="#" class="btn btn-dark p-1 px-xl-4 mx-xl-3">S</a>
+				<a href="#" class="btn btn-dark p-1 px-xl-4 mx-xl-3">M</a>
+				<a href="#" class="btn btn-dark p-1 px-xl-4 mx-xl-3">L</a>
+				<a href="#" class="btn btn-dark p-1 px-xl-4 mx-xl-3">XL</a>
+			</div>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col mb-4 px-5">
+	    <div class="card tab-active">
+			<div id="rdShopHoodiesCarousel" class="carousel slide p-2" data-ride="carousel">
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			      <img src="Images/rdblackhoodie.jpg" class="d-block w-100" alt="...">
+			    </div>
+			    <div class="carousel-item">
+			      <img src="Images/rdgreyhoodie.jpg" class="d-block w-100" alt="...">
+			    </div>
+			  </div>
+			  <a class="carousel-control-prev" href="#rdShopHoodiesCarousel" role="button" data-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next" href="#rdShopHoodiesCarousel" role="button" data-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div>
+	      <!-- <img src="Images/rdgreyhoodie.jpg" class="card-img p-2" alt="..."> -->
+	      <div class="card-body">
+	        <h5 class="card-title table-head text-center">Hoodies</h5>
+			<div class="text-center">
+				<a href="#" class="btn btn-dark p-1 px-xl-4 mx-xl-3">S</a>
+				<a href="#" class="btn btn-dark p-1 px-xl-4 mx-xl-3">M</a>
+				<a href="#" class="btn btn-dark p-1 px-xl-4 mx-xl-3">L</a>
+				<a href="#" class="btn btn-dark p-1 px-xl-4 mx-xl-3">XL</a>
+			</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="row row-cols-2">
+	  <div class="col mb-4 px-5">
+	    <div class="card tab-active">
+	      <img src="Images/rdhat.jpg" class="card-img p-2" alt="...">
+	      <div class="card-body">
+	        <h5 class="card-title table-head text-center">Hats</h5>
+			<div class="text-center table-head">
+				<a href="#" class="btn btn-dark px-4 mx-3">Order Now</a>
+			</div>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="col mb-4 px-5">
+	    <div class="card tab-active">
+	      <img src="Images/rdjournal.jpg" class="card-img p-2" alt="...">
+	      <div class="card-body">
+	        <h5 class="card-title table-head text-center">Journals</h5>
+			<div class="text-center table-head">
+				<a href="#" class="btn btn-dark px-4 mx-3">Order Now</a>
+			</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</div>
+
+
+
+<!-- <div class="container">
+	<div class="row">
+		<div class="col-md-10 mx-auto h-50">
+			<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+			  <ol class="carousel-indicators">
+			    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+			    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+			    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+			  </ol>
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			      <img src="Images/RDtshirt.jpg" class="d-block w-100" alt="...">
+			      <div class="carousel-caption d-none d-md-block">
+			        <h5 class="table-head">First slide label</h5>
+			        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+			      </div>
+			    </div>
+			    <div class="carousel-item">
+			      <img src="Images/rdgreyhoodie.jpg" class="d-block w-100" alt="...">
+			      <div class="carousel-caption d-none d-md-block">
+			        <h5>Second slide label</h5>
+			        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			      </div>
+			    </div>
+			    <div class="carousel-item">
+			      <img src="Images/rdhat.jpg" class="d-block w-100" alt="...">
+			      <div class="carousel-caption d-none d-md-block">
+			        <h5>Third slide label</h5>
+			        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+			      </div>
+			    </div>
+			  </div>
+			  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div>
+		</div>
+	</div>
+</div> -->
 
     </body>
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->

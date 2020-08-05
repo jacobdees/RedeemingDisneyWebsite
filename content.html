@@ -20,31 +20,36 @@
 	    <title>Redeeming Disney</title>
 	</head>
     <body>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+			<span class="">
 			<button
 				class="navbar-toggler"
 				type="button"
 				data-toggle="collapse"
-				data-target="#navbarNav"
+				data-target="#rdNavbar"
 				aria-controls="navbarNav"
 				aria-expanded="false"
 				aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
+			</span>
+				<a class="navbar-brand justify-content-center d-none d-sm-block d-lg-none align-content-between" href="index.html">REDEEMING DISNEY</a>
 			<div
-				class="collapse navbar-collapse justify-content-center"
+				class="collapse navbar-collapse"
 				id="rdNavbar">
                 
-				<ul class="navbar-nav nav-fill col-10">
+				<ul class="navbar-nav nav-fill col-10 mx-auto d-flex justify-content-end justify-content-lg-center align-content-center">
 					<li class="nav-item">
 						<a class="nav-link" href="index.html">HOME</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="aboutus.html">ABOUT US</a>
 					</li>
-					<a class="navbar-brand" href="index.html">REDEEMING DISNEY</a>
-					<li class="nav-item active">
-						<a class="nav-link" href="#">CONTENT</a>
+					<span class="nav-item">
+						<a class="navbar-brand d-none d-lg-block" href="index.html">REDEEMING DISNEY</a>
+					</span>
+					<li class="nav-item">
+						<a class="nav-link active" href="#">CONTENT</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="shop.html">SHOP</a>
@@ -53,7 +58,7 @@
 			</div>
 		</nav>
 
-	<div class="container full-height">
+	<div class="container full-height parallax1">
 		<header>
 			<div class="row">
 				<div class="col-1"></div>
@@ -83,8 +88,8 @@
 	  </li>
 	</ul> -->
 
-	<div class="container full-height" id="content" style="padding-top: 100px;">
-		<ul class="nav nav-fill" id="myTab" role="tablist">
+	<div class="container full-height parallax2" id="content" style="padding-top: 100px;">
+		<ul class="nav nav-fill" id="contentTabs" role="tablist">
 		  <li class="nav-item" role="presentation">
 		    <a class="tab-selector nav-link tab-active" id="episodes-tab" data-toggle="tab" href="#episodes" role="tab" aria-controls="episodes" aria-selected="true">Episodes</a>
 		  </li>
