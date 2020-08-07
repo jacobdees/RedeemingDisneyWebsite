@@ -1,5 +1,3 @@
-/* @import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'); */
-
 html{
 	scroll-behavior: smooth;
 }
@@ -35,42 +33,9 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-.parallax1 {
-  /* The image used */
-  /* background-color: black; */
-  background-image: url("Images/background.jpeg");
-
-  /* Full height */
-  height: 100%;
-  width: 100%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.parallax2 {
-  /* The image used */
-  background-color: grey;
-
-  /* Full height */
-  height: 100%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-
 header {
-	/* width: 100%;
-	height: 100%; */
 	text-align: center;
-	/* width: 90%;
+	width: 90%;
 	position: absolute;
 	left:50%;
 	top: 50%;
@@ -80,7 +45,7 @@ header {
 	-moz-transform: translateX(-50%) translateY(-50%);
 	-ms-transform: translateX(-50%) translateY(-50%);
 	-o-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%); */
+	transform: translateX(-50%) translateY(-50%);
 }
 
 .index-header{
@@ -88,10 +53,9 @@ header {
 }
 
 header h1{
-	/* font-size: 300%; */
-	/* height: 100%; */
+	font-size: 300%;
 	text-transform: uppercase;
-	letter-spacing: 10px;
+	letter-spacing: 20px;
 	text-rendering: optimizeLegibility;
 	font-weight: bold;
 }
@@ -149,8 +113,8 @@ footer{
 }
 
 .tab-active { 
-  height: auto;
-  width: auto;
+  height: 100%;
+  width: 100%;
   left:0;
   right: 0;
   top: 0;
@@ -204,4 +168,3 @@ table{
 tr.collapse.in {
   display:table-row;
 }
-

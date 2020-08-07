@@ -1,40 +1,24 @@
-// Get the container element
-var btnContainer = document.getElementById("contentTabs");
+const elEp = document.querySelector("#episodes-tab");
+elEp.addEventListener("click", rainbowBackgroundEpisodes);
 
-// Get all buttons with class="btn" inside the container
-var btns = btnContainer.getElementsByClassName("nav-item");
+const elVid = document.querySelector("#videos-tab");
+elVid.addEventListener("click", rainbowBackgroundVideos);
 
-// Loop through the buttons and add the active class to the current/clicked button
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("tab-active");
-    current[0].className = current[0].className.replace(" tab-active", "");
-    this.className += " tab-active";
-  });
+const elEv = document.querySelector("#events-tab");
+elEv.addEventListener("click", rainbowBackgroundEvents);
+
+
+function rainbowBackgroundEpisodes(){
+    if(("#videosTab").children("i").hasClass("tab-active")){
+        ("#videosTab").children("i").removeClass("tab-active");
+        ("#episodesTab").children("i").addClass("tab-active");
+    } else
+    if(("#eventsTab").children("i").hasClass("tab-active")){
+        ("#eventsTab").children("i").removeClass("tab-active");
+        ("#episodesTab").children("i").addClass("tab-active");
+    }
+    console.log("Episodes");
 }
-
-
-// const elEp = document.querySelector("#episodes-tab");
-// elEp.addEventListener("click", rainbowBackgroundEpisodes);
-
-// const elVid = document.querySelector("#videos-tab");
-// elVid.addEventListener("click", rainbowBackgroundVideos);
-
-// const elEv = document.querySelector("#events-tab");
-// elEv.addEventListener("click", rainbowBackgroundEvents);
-
-
-// function rainbowBackgroundEpisodes(){
-//     if(("#videosTab").children("i").hasClass("tab-active")){
-//         ("#videosTab").children("i").removeClass("tab-active");
-//         ("#episodesTab").children("i").addClass("tab-active");
-//     } else
-//     if(("#eventsTab").children("i").hasClass("tab-active")){
-//         ("#eventsTab").children("i").removeClass("tab-active");
-//         ("#episodesTab").children("i").addClass("tab-active");
-//     }
-//     console.log("Episodes");
-// }
 
 // function rainbowBackgroundVideos(){
 //     console.log("Videos");
@@ -42,22 +26,22 @@ for (var i = 0; i < btns.length; i++) {
 //     element.classList.add("tab-active");
 // }
 
-// function rainbowBackgroundEvents(){
-//     console.log("Events");
-//     if(("#videosTab").hasClass("tab-active")){
-//         ("#videosTab").removeClass("tab-active");
-//         ("#eventsTab").addClass("tab-active");
-//     } else
-//     if(("#episodesTab").hasClass("tab-active")){
-//         ("#episodesTab").removeClass("tab-active");
-//         ("#eventsTab").addClass("tab-active");
-//     }
-// }
+function rainbowBackgroundEvents(){
+    console.log("Events");
+    if(("#videosTab").hasClass("tab-active")){
+        ("#videosTab").removeClass("tab-active");
+        ("#eventsTab").addClass("tab-active");
+    } else
+    if(("#episodesTab").hasClass("tab-active")){
+        ("#episodesTab").removeClass("tab-active");
+        ("#eventsTab").addClass("tab-active");
+    }
+}
 
-// function myFunction() {
-//   var element = document.getElementById("videosTab");
-//   element.classList.add("tab-active");
-// }
+function myFunction() {
+  var element = document.getElementById("videosTab");
+  element.classList.add("tab-active");
+}
 
 // $(function(){
 //     $("#episodesTab").click(function(){
